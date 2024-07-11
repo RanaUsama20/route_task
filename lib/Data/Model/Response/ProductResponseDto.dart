@@ -6,6 +6,7 @@ import 'package:flutter_app_e_commerece_online/Domain/Entites/ProductResponseEnt
 /// limit : 30
 
 class ProductResponseDto extends ProductResponseEntity{
+
   ProductResponseDto({
       super.products,
       super.total,
