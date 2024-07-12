@@ -1,7 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter_app_e_commerece_online/Domain/Entites/failures.dart';
-import 'package:flutter_app_e_commerece_online/Domain/Repository/Repository/home_repository_contract.dart';
+
 import '../Entites/ProductResponseEntity.dart';
+import '../Entites/failures.dart';
+import '../Repository/Repository/home_repository_contract.dart';
 
 class GetAllProductsUseCase{
   HomeRepositoryContract repositoryContract;

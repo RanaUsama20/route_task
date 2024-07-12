@@ -1,7 +1,9 @@
-import 'package:flutter_app_e_commerece_online/Domain/Entites/ProductResponseEntity.dart';
-import 'package:flutter_app_e_commerece_online/Domain/Use%20Cases/get_all_products_usecase.dart';
-import 'package:flutter_app_e_commerece_online/UI/product_list_screen/Cubit/product_list_states.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:route_task/UI/product_list_screen/Cubit/product_list_states.dart';
+
+import '../../../Domain/Entites/ProductResponseEntity.dart';
+import '../../../Domain/Use Cases/get_all_products_usecase.dart';
 
 
 class productListScreenViewModel extends Cubit<ProductListScreenStates>{

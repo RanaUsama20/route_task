@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_e_commerece_online/UI/utils/my_colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../utils/my_colors.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField({super.key});

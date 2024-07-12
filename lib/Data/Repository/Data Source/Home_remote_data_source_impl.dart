@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter_app_e_commerece_online/Data/api/api_manager.dart';
-import 'package:flutter_app_e_commerece_online/Domain/Entites/ProductResponseEntity.dart';
-import 'package:flutter_app_e_commerece_online/Domain/Entites/failures.dart';
-import 'package:flutter_app_e_commerece_online/Domain/Repository/Data%20Source/home_remote_data_source.dart';
+import '../../../Domain/Entites/ProductResponseEntity.dart';
+import '../../../Domain/Entites/failures.dart';
+import '../../../Domain/Repository/Data Source/home_remote_data_source.dart';
+import '../../api/api_manager.dart';
 
 class HomeRemoteDataSourceImpl implements HomeRemoteDataSource{
   ApiManager apiManager;
