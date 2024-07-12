@@ -9,18 +9,18 @@ import '../../../Domain/Use Cases/get_all_products_usecase.dart';
 class productListScreenViewModel extends Cubit<ProductListScreenStates>{
   GetAllProductsUseCase getAllProductsUseCase;
 
-  productListScreenViewModel({required this.getAllProductsUseCase}):super(ProductListTabInitialStates());
+  productListScreenViewModel({required this.getAllProductsUseCase}):super(ProductListScreenInitialStates());
 
   List<ProductsEntity> productsList = [];
 
   getProducts() async {
-    emit(ProductListTabLoadingStates(loadingMessage: 'Loading...'));
+    emit(ProductListScreenLoadingStates(loadingMessage: 'Loading...'));
     var either = await getAllProductsUseCase.invoke();
     either.fold((l) {
-      emit(ProductListTabErrorStates(errors: l));
+      emit(ProductListScreenErrorStates(errors: l));
     }, (response) {
       productsList = response.products ?? [];
-      emit(ProductListTabSuccessStates(productResponseEntity: response));
+      emit(ProductListScreenSuccessStates(productResponseEntity: response));
     });
   }
 

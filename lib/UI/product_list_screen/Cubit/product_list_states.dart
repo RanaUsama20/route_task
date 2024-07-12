@@ -6,18 +6,18 @@ import '../../../Domain/Entites/failures.dart';
 
 abstract class ProductListScreenStates{}
 
-class ProductListTabInitialStates extends ProductListScreenStates{}
-class ProductListTabLoadingStates extends ProductListScreenStates{
+class ProductListScreenInitialStates extends ProductListScreenStates{}
+class ProductListScreenLoadingStates extends ProductListScreenStates{
   String? loadingMessage  ;
-  ProductListTabLoadingStates({required this.loadingMessage});
+  ProductListScreenLoadingStates({required this.loadingMessage});
 }
-class ProductListTabErrorStates extends ProductListScreenStates{
+class ProductListScreenErrorStates extends ProductListScreenStates{
   Failures errors ;
-  ProductListTabErrorStates({required this.errors});
+  ProductListScreenErrorStates({required this.errors});
 }
 
-class ProductListTabSuccessStates extends ProductListScreenStates {
+class ProductListScreenSuccessStates extends ProductListScreenStates {
   ProductResponseEntity productResponseEntity ;
-  ProductListTabSuccessStates({required this.productResponseEntity});
+  ProductListScreenSuccessStates({required this.productResponseEntity});
 }
 
