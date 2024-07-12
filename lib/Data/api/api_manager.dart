@@ -3,9 +3,7 @@ import 'dart:convert';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_app_e_commerece_online/Domain/Entites/failures.dart';
-import 'package:flutter_app_e_commerece_online/data/api/api_constants.dart';
 import 'package:flutter_app_e_commerece_online/data/model/response/ProductResponseDto.dart';
-
 import 'package:http/http.dart' as http;
 
 class ApiManager {
@@ -23,7 +21,7 @@ class ApiManager {
     final connectivityResult = await (Connectivity().checkConnectivity());
     if (connectivityResult == ConnectivityResult.mobile ||
         connectivityResult == ConnectivityResult.wifi) {
-      Uri url = Uri.https(Apiconstants.baseUrl, Apiconstants.getAllProductsApi);
+      Uri url = Uri.parse('https://dummyjson.com/products');
       var response = await http.get(url);
       var responseBody = response.body;
       var json = jsonDecode(responseBody);
