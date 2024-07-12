@@ -20,11 +20,11 @@ I used Clean Architecture and Cubit state management
 
 ## Screenshots
 
-![App Screenshot](1.png)
-![App Screenshot](2.png)
-![App Screenshot](3.png)
-![App Screenshot](4.png)
-![App Screenshot](5.png)
+<img src="1.png" width="200">
+<img src="2.png" width="200">
+<img src="3.png" width="200">
+<img src="4.png" width="200">
+<img src="5.png" width="200">
 
 
 
