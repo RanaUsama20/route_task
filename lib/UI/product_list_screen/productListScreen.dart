@@ -68,7 +68,7 @@ class ProductListScreen extends StatelessWidget {
                       SizedBox(
                         height: 24.h,
                       ),
-                      state is ProductListTabLoadingStates ?
+                      state is ProductListScreenLoadingStates ?
                       const Center(child: CircularProgressIndicator(
                         color: AppColors.primaryColor,
                       ),)
