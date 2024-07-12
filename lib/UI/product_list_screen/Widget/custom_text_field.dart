@@ -7,28 +7,30 @@ class CustomTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
-      cursorColor: AppColors.primaryColor,
-      decoration: InputDecoration(
-          contentPadding: EdgeInsets.all(15.h),
-          hintText: "What do you search for?",
-          hintStyle: TextStyle(
-              fontSize: 14.sp,
-              fontWeight: FontWeight.normal,
-              color: const Color.fromRGBO(6, 0, 79, 0.6)),
-          prefixIcon: IconButton(
-            icon: Icon(
-              Icons.search,
-              size: 32.sp,
-              color: AppColors.primaryColor.withOpacity(0.75),
+    return Material(
+      child: TextField(
+        cursorColor: AppColors.primaryColor,
+        decoration: InputDecoration(
+            contentPadding: EdgeInsets.all(15.h),
+            hintText: "What do you search for?",
+            hintStyle: TextStyle(
+                fontSize: 14.sp,
+                fontWeight: FontWeight.normal,
+                color: const Color.fromRGBO(6, 0, 79, 0.6)),
+            prefixIcon: IconButton(
+              icon: Icon(
+                Icons.search,
+                size: 32.sp,
+                color: AppColors.primaryColor.withOpacity(0.75),
+              ),
+              onPressed: () {},
             ),
-            onPressed: () {},
-          ),
-          border: buildBaseBorder(),
-          enabledBorder: buildBaseBorder(),
-          focusedBorder: buildBaseBorder().copyWith(
-              borderSide:
-                  const BorderSide(color: AppColors.primaryColor, width: 2))),
+            border: buildBaseBorder(),
+            enabledBorder: buildBaseBorder(),
+            focusedBorder: buildBaseBorder().copyWith(
+                borderSide:
+                    const BorderSide(color: AppColors.primaryColor, width: 2))),
+      ),
     );
   }
 
