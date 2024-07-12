@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_e_commerece_online/Domain/Dependency%20injection.dart';
-import 'package:flutter_app_e_commerece_online/UI/product_list_screen/Cubit/product_list_states.dart';
-import 'package:flutter_app_e_commerece_online/ui/utils/my_assets.dart';
-import 'package:flutter_app_e_commerece_online/ui/utils/my_colors.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../Domain/Dependency injection.dart';
 import '../utils/CartScreen.dart';
 import '../utils/ProductDetailsView.dart';
+import '../utils/my_assets.dart';
+import '../utils/my_colors.dart';
 import 'Cubit/productListScreen_view_model.dart';
+import 'Cubit/product_list_states.dart';
 import 'Widget/GridViewCardItem.dart';
 import 'Widget/custom_text_field.dart';
 

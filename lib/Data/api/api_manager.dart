@@ -2,9 +2,10 @@ import 'dart:convert';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dartz/dartz.dart';
-import 'package:flutter_app_e_commerece_online/Domain/Entites/failures.dart';
-import 'package:flutter_app_e_commerece_online/data/model/response/ProductResponseDto.dart';
 import 'package:http/http.dart' as http;
+
+import '../../Domain/Entites/failures.dart';
+import '../Model/Response/ProductResponseDto.dart';
 
 class ApiManager {
   ApiManager._();

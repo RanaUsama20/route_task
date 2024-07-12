@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_e_commerece_online/UI/utils/my_assets.dart';
-import 'package:flutter_app_e_commerece_online/UI/utils/my_colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../../Domain/Entites/ProductResponseEntity.dart';
+import '../../utils/my_assets.dart';
+import '../../utils/my_colors.dart';
 
 
 class GridViewCardItem extends StatelessWidget {

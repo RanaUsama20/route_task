@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter_app_e_commerece_online/Domain/Entites/failures.dart';
 
 import '../../Entites/ProductResponseEntity.dart';
+import '../../Entites/failures.dart';
 
 abstract class HomeRepositoryContract{
 

@@ -1,7 +1,8 @@
 
 
-import 'package:flutter_app_e_commerece_online/Domain/Entites/ProductResponseEntity.dart';
-import 'package:flutter_app_e_commerece_online/Domain/Entites/failures.dart';
+
+import '../../../Domain/Entites/ProductResponseEntity.dart';
+import '../../../Domain/Entites/failures.dart';
 
 abstract class ProductListScreenStates{}
 
