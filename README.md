@@ -19,12 +19,12 @@ A flutter screen which displayes products List from a dummy data Api.
 I used Clean Architecture and Cubit state management 
 
 ## Screenshots
-
+<p float="left">
 <img src="1.jpg" width="200">
 <img src="2.jpg" width="200">
 <img src="3.jpg" width="200">
 <img src="4.jpg" width="200">
-
+</p>
 
 
 
