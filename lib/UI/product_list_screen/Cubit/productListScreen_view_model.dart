@@ -11,7 +11,7 @@ class productListScreenViewModel extends Cubit<ProductListScreenStates>{
 
   productListScreenViewModel({required this.getAllProductsUseCase}):super(ProductListScreenInitialStates());
 
-  List<ProductsEntity> productsList = [];
+  List<ProductResponseEntity> productsList = [];
 
   getProducts() async {
     emit(ProductListScreenLoadingStates(loadingMessage: 'Loading...'));
@@ -19,8 +19,9 @@ class productListScreenViewModel extends Cubit<ProductListScreenStates>{
     either.fold((l) {
       emit(ProductListScreenErrorStates(errors: l));
     }, (response) {
-      productsList = response.products ?? [];
-      emit(ProductListScreenSuccessStates(productResponseEntity: response));
+       productsList = response;
+      print('this is the response $response');
+      emit(ProductListScreenSuccessStates(productResponseEntity: productsList));
     });
   }
 

@@ -6,6 +6,6 @@ import '../../Entites/failures.dart';
 
 abstract class HomeRemoteDataSource{
 
-  Future<Either<Failures,ProductResponseEntity>> getAllProducts();
+  Future<Either<Failures,List<ProductResponseEntity>>> getAllProducts();
 
 }

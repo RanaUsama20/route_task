@@ -10,7 +10,7 @@ class HomeRepositoryImpl implements HomeRepositoryContract{
   HomeRepositoryImpl({required this.remoteDataSource});
 
   @override
-  Future<Either<Failures, ProductResponseEntity>> getAllProducts() {
+  Future<Either<Failures, List<ProductResponseEntity>>> getAllProducts() {
    return remoteDataSource.getAllProducts();
   }
 }

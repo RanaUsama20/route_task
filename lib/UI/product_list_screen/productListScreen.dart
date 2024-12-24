@@ -30,41 +30,41 @@ class ProductListScreen extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(
-                        height: 10.h,
-                      ),
-                      Image.asset(
-                        MyAssets.logo,
-                        color: AppColors.primaryColor,
-                      ),
-                      SizedBox(
-                        height: 18.h,
-                      ),
-                      Row(
-                        children: [
-                          Expanded(
-                            child: CustomTextField(),
-                          ),
-                          SizedBox(
-                            width: 24.w,
-                          ),
-                          Material(
-                            child: InkWell(
-                              onTap: () {
-                                Navigator.of(context).pushNamed(CartScreen.routeName);
-                              },
-                              child: Badge(
-                                label: Text('0'),
-                                child: ImageIcon(
-                                  AssetImage(MyAssets.shoppingCart),
-                                  size: 28.sp,
-                                  color: AppColors.primaryColor,
-                                ),
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
+                      // SizedBox(
+                      //   height: 10.h,
+                      // ),
+                      // Image.asset(
+                      //   MyAssets.logo,
+                      //   color: AppColors.primaryColor,
+                      // ),
+                      // SizedBox(
+                      //   height: 18.h,
+                      // ),
+                      // Row(
+                      //   children: [
+                      //     Expanded(
+                      //       child: CustomTextField(),
+                      //     ),
+                      //     SizedBox(
+                      //       width: 24.w,
+                      //     ),
+                      //     Material(
+                      //       child: InkWell(
+                      //         onTap: () {
+                      //           Navigator.of(context).pushNamed(CartScreen.routeName);
+                      //         },
+                      //         child: Badge(
+                      //           label: Text('0'),
+                      //           child: ImageIcon(
+                      //             AssetImage(MyAssets.shoppingCart),
+                      //             size: 28.sp,
+                      //             color: AppColors.primaryColor,
+                      //           ),
+                      //         ),
+                      //       ),
+                      //     )
+                      //   ],
+                      // ),
                       SizedBox(
                         height: 24.h,
                       ),

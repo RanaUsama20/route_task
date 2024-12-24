@@ -80,13 +80,13 @@ class MockproductListScreenViewModel extends _i1.Mock
       );
 
   @override
-  List<_i5.ProductsEntity> get productsList => (super.noSuchMethod(
+  List<_i5.ProductResponseEntity> get productsList => (super.noSuchMethod(
         Invocation.getter(#productsList),
-        returnValue: <_i5.ProductsEntity>[],
-      ) as List<_i5.ProductsEntity>);
+        returnValue: <_i5.ProductResponseEntity>[],
+      ) as List<_i5.ProductResponseEntity>);
 
   @override
-  set productsList(List<_i5.ProductsEntity>? _productsList) =>
+  set productsList(List<_i5.ProductResponseEntity>? _productsList) =>
       super.noSuchMethod(
         Invocation.setter(
           #productsList,

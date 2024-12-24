@@ -5,6 +5,6 @@ import '../../Entites/failures.dart';
 
 abstract class HomeRepositoryContract{
 
-  Future<Either<Failures,ProductResponseEntity>> getAllProducts();
+  Future<Either<Failures,List<ProductResponseEntity>>> getAllProducts();
 
 }
