@@ -10,7 +10,7 @@ A flutter screen which displayes products List from a dummy data Api.
 #### Get all items
 
 ```http
-  GET / 'https://dummyjson.com/products'
+  GET / 'https://fakestoreapi.com/products'
 ```
 
 
