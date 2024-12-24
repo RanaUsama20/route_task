@@ -33,7 +33,6 @@ class ApiManager {
         return Left(ServerError(errorMessage: 'Server Error'));
       }
     } else {
-      /// no internet connection
       return Left(NetworkError(errorMessage: 'Check Internet connection'));
     }
   }
