@@ -8,7 +8,7 @@ class GetAllProductsUseCase{
   HomeRepositoryContract repositoryContract;
   GetAllProductsUseCase({required this.repositoryContract});
 
-  Future<Either<Failures,ProductResponseEntity>> invoke(){
+  Future<Either<Failures,List<ProductResponseEntity>>> invoke(){
     return repositoryContract.getAllProducts();
   }
 }

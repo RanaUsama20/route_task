@@ -51,8 +51,8 @@ void main() {
     // Arrange
     when(mockViewModel.state).thenReturn(ProductListScreenLoadingStates(loadingMessage: ''));
     when(mockViewModel.productsList).thenReturn([
-      ProductsEntity(id: 1, title: 'Product 1', price: 10.0),
-      ProductsEntity(id: 2, title: 'Product 2', price: 20.0),
+      ProductResponseEntity(id: 1, title: 'Product 1', price: 10.0),
+      ProductResponseEntity(id: 2, title: 'Product 2', price: 20.0),
     ]);
 
     await tester.pumpWidget(

@@ -1,6 +1,4 @@
 
-
-
 import '../../../Domain/Entites/ProductResponseEntity.dart';
 import '../../../Domain/Entites/failures.dart';
 
@@ -17,7 +15,7 @@ class ProductListScreenErrorStates extends ProductListScreenStates{
 }
 
 class ProductListScreenSuccessStates extends ProductListScreenStates {
-  ProductResponseEntity productResponseEntity ;
+  List<ProductResponseEntity> productResponseEntity ;
   ProductListScreenSuccessStates({required this.productResponseEntity});
 }
 

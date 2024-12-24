@@ -7,7 +7,7 @@ import '../../utils/my_colors.dart';
 
 class GridViewCardItem extends StatelessWidget {
   bool isWishlisted = false;
-  ProductsEntity productsEntity ;
+  ProductResponseEntity productsEntity ;
   GridViewCardItem({required this.productsEntity});
 
   @override
@@ -32,7 +32,7 @@ class GridViewCardItem extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(15.r),
                   child: Image.network(
-                    productsEntity.thumbnail??''
+                    productsEntity.image??''
                     ,
                     fit: BoxFit.cover,
                     width: 191.w,
@@ -105,7 +105,7 @@ class GridViewCardItem extends StatelessWidget {
               child: Row(
                 children: [
                   Text(
-                    "Review (${productsEntity.rating})",
+                    "Review (${productsEntity.rating!.rate})",
                     maxLines: 1,
                     style: Theme.of(context).textTheme.titleSmall!.copyWith(
                       fontSize: 14.sp,
